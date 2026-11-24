@@ -1,0 +1,6 @@
+     0.321 ms  Sistema listo. Comandos: V=verde, R=rojo, A=ambos, 0=apagar.
+  5461.201 ms  [t=5460 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+ 29767.892 ms  [t=29767 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+ 34650.325 ms  [t=34650 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+ 39589.075 ms  [t=39588 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+ 43563.208 ms  [t=43563 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.

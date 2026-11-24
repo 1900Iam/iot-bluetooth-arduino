@@ -1,0 +1,112 @@
+Sistema listo. Comandos: V=verde, R=rojo, A=ambos, 0=apagar.
+LOG,t_ms,origen,comando,resultado,verde,rojo
+BT> [t=591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+LOG,591,BT,V,OK,1,0
+BT> [t=992 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+LOG,992,BT,R,OK,0,1
+BT> [t=1391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+LOG,1391,BT,A,OK,1,1
+BT> [t=1792 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+LOG,1792,BT,0,OK,0,0
+BT> [t=2191 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.
+LOG,2191,BT,X,INVALIDO,0,0
+BT> [t=2591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+LOG,2591,BT,V,OK,1,0
+BT> [t=2991 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+LOG,2991,BT,R,OK,0,1
+BT> [t=3391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+LOG,3391,BT,A,OK,1,1
+BT> [t=3791 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+LOG,3791,BT,0,OK,0,0
+BT> [t=4192 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.
+LOG,4192,BT,X,INVALIDO,0,0
+BT> [t=4591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+LOG,4591,BT,V,OK,1,0
+BT> [t=4992 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+LOG,4992,BT,R,OK,0,1
+BT> [t=5391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+LOG,5391,BT,A,OK,1,1
+BT> [t=5791 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+LOG,5791,BT,0,OK,0,0
+BT> [t=6191 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.
+LOG,6191,BT,X,INVALIDO,0,0
+BT> [t=6591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+LOG,6591,BT,V,OK,1,0
+BT> [t=6991 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+LOG,6991,BT,R,OK,0,1
+BT> [t=7392 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+LOG,7392,BT,A,OK,1,1
+BT> [t=7791 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+LOG,7791,BT,0,OK,0,0
+BT> [t=8192 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.
+LOG,8192,BT,X,INVALIDO,0,0
+BT> [t=8591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+LOG,8591,BT,V,OK,1,0
+BT> [t=8991 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+LOG,8991,BT,R,OK,0,1
+BT> [t=9391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+LOG,9391,BT,A,OK,1,1
+BT> [t=9791 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+LOG,9791,BT,0,OK,0,0
+BT> [t=10191 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.
+LOG,10191,BT,X,INVALIDO,0,0
+BT> [t=10592 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+LOG,10592,BT,V,OK,1,0
+BT> [t=10991 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+LOG,10991,BT,R,OK,0,1
+BT> [t=11392 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+LOG,11392,BT,A,OK,1,1
+BT> [t=11791 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+LOG,11791,BT,0,OK,0,0
+BT> [t=12191 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.
+LOG,12191,BT,X,INVALIDO,0,0
+BT> [t=12591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+LOG,12591,BT,V,OK,1,0
+BT> [t=12991 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+LOG,12991,BT,R,OK,0,1
+BT> [t=13391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+LOG,13391,BT,A,OK,1,1
+BT> [t=13792 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+LOG,13792,BT,0,OK,0,0
+BT> [t=14191 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.
+LOG,14191,BT,X,INVALIDO,0,0
+BT> [t=14592 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+LOG,14592,BT,V,OK,1,0
+BT> [t=14991 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+LOG,14991,BT,R,OK,0,1
+BT> [t=15391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+LOG,15391,BT,A,OK,1,1
+BT> [t=15791 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+LOG,15791,BT,0,OK,0,0
+BT> [t=16191 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.
+LOG,16191,BT,X,INVALIDO,0,0
+BT> [t=16591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+LOG,16591,BT,V,OK,1,0
+BT> [t=16992 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+LOG,16992,BT,R,OK,0,1
+BT> [t=17391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+LOG,17391,BT,A,OK,1,1
+BT> [t=17792 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+LOG,17792,BT,0,OK,0,0
+BT> [t=18191 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.
+LOG,18191,BT,X,INVALIDO,0,0
+BT> [t=18591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+LOG,18591,BT,V,OK,1,0
+BT> [t=18991 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+LOG,18991,BT,R,OK,0,1
+BT> [t=19391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+LOG,19391,BT,A,OK,1,1
+BT> [t=19791 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+LOG,19791,BT,0,OK,0,0
+BT> [t=20192 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.
+LOG,20192,BT,X,INVALIDO,0,0
+BT> [t=20591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+LOG,20591,BT,V,OK,1,0
+BT> [t=20992 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+LOG,20992,BT,A,OK,1,1
+BT> [t=21391 ms] ERROR: comando 'Z' no valido. Use V, R, A o 0.
+LOG,21391,BT,Z,INVALIDO,1,1
+BT> [t=21791 ms] ERROR: comando '7' no valido. Use V, R, A o 0.
+LOG,21791,BT,7,INVALIDO,1,1
+BT> [t=22189 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+LOG,22189,BT,0,OK,0,0

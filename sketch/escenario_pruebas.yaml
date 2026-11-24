@@ -1,0 +1,615 @@
+name: 'Pruebas de comandos Bluetooth (UART en D10/D11)'
+version: 1
+author: 'Fabián Estiben Romero Villamil'
+
+# 55 líneas: V, R, A, 0 y X repetidos 10 veces cada 400 ms, más 5 casos límite.
+# Cada línea se envía por el monitor serial, conectado a D10/D11 como el HC-05.
+steps:
+  - wait-serial: 'Sistema listo'
+  - delay: 500ms
+  - write-serial: "V\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "R\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "A\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "0\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "X\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "V\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "R\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "A\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "0\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "X\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "V\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "R\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "A\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "0\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "X\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "V\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "R\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "A\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "0\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "X\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "V\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "R\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "A\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "0\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "X\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "V\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "R\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "A\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "0\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "X\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "V\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "R\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "A\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "0\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "X\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "V\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "R\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "A\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "0\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "X\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "V\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "R\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "A\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "0\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "X\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "V\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "R\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "A\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "0\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "X\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: "v\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - write-serial: " A\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "Z\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "7\r\n"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 1
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 1
+  - delay: 250ms
+  - write-serial: "0"
+  - delay: 150ms
+  - expect-pin:
+      part-id: uno
+      name: '2'
+      value: 0
+  - expect-pin:
+      part-id: uno
+      name: '3'
+      value: 0
+  - delay: 250ms
+  - delay: 500ms

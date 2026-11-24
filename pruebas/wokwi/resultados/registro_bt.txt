@@ -1,0 +1,56 @@
+     0.321 ms  Sistema listo. Comandos: V=verde, R=rojo, A=ambos, 0=apagar.
+   592.083 ms  [t=591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+   992.464 ms  [t=992 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+  1391.826 ms  [t=1391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+  1792.210 ms  [t=1792 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+  2191.564 ms  [t=2191 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.
+  2591.953 ms  [t=2591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+  2991.317 ms  [t=2991 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+  3391.699 ms  [t=3391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+  3792.085 ms  [t=3791 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+  4192.455 ms  [t=4192 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.
+  4591.827 ms  [t=4591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+  4992.214 ms  [t=4992 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+  5391.573 ms  [t=5391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+  5791.954 ms  [t=5791 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+  6191.308 ms  [t=6191 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.
+  6591.699 ms  [t=6591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+  6992.085 ms  [t=6991 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+  7392.469 ms  [t=7392 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+  7791.829 ms  [t=7791 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+  8192.199 ms  [t=8192 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.
+  8591.570 ms  [t=8591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+  8991.954 ms  [t=8991 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+  9391.318 ms  [t=9391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+  9791.700 ms  [t=9791 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+ 10192.076 ms  [t=10191 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.
+ 10592.466 ms  [t=10592 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+ 10991.828 ms  [t=10991 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+ 11392.212 ms  [t=11392 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+ 11791.574 ms  [t=11791 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+ 12191.945 ms  [t=12191 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.
+ 12591.313 ms  [t=12591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+ 12991.696 ms  [t=12991 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+ 13392.080 ms  [t=13391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+ 13792.466 ms  [t=13792 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+ 14191.820 ms  [t=14191 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.
+ 14592.209 ms  [t=14592 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+ 14991.570 ms  [t=14991 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+ 15391.954 ms  [t=15391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+ 15791.313 ms  [t=15791 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+ 16191.688 ms  [t=16191 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.
+ 16592.084 ms  [t=16591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+ 16992.466 ms  [t=16992 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+ 17391.828 ms  [t=17391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+ 17792.209 ms  [t=17792 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+ 18191.561 ms  [t=18191 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.
+ 18591.956 ms  [t=18591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+ 18991.313 ms  [t=18991 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+ 19391.696 ms  [t=19391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+ 19792.084 ms  [t=19791 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+ 20192.458 ms  [t=20192 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.
+ 20591.828 ms  [t=20591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+ 20992.217 ms  [t=20992 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+ 21391.563 ms  [t=21391 ms] ERROR: comando 'Z' no valido. Use V, R, A o 0.
+ 21791.948 ms  [t=21791 ms] ERROR: comando '7' no valido. Use V, R, A o 0.
+ 22189.270 ms  [t=22189 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF

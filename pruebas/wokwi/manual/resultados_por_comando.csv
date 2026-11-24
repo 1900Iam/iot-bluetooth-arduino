@@ -1,0 +1,6 @@
+n,enviado,comando,valido,t_envio_ms,lat_led_ms,lat_resp_ms,dur_resp_ms,verde,rojo,esperado,cumple,respuesta
+1,V\r\n,V,True,5448.345,9.717,9.73,61.36,1,0,10,True,[t=5460 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+2,R\r\n,R,True,29755.392,9.36,9.374,61.39,0,1,01,True,[t=29767 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+3,A\r\n,A,True,34638.736,8.451,8.465,62.45,1,1,11,True,[t=34650 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+4,0\r\n,0,True,39576.079,9.857,9.871,62.46,0,0,00,True,[t=39588 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+5,X\r\n,X,False,43550.086,,9.997,64.56,0,0,00,True,"[t=43563 ms] ERROR: comando 'X' no valido. Use V, R, A o 0."

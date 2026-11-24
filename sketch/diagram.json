@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "author": "Fabián Estiben Romero Villamil",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": 120,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 20,
+      "left": 180,
+      "rotate": 90,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 20,
+      "left": 240,
+      "rotate": 90,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_verde",
+      "top": -70,
+      "left": 177,
+      "attrs": {
+        "color": "green",
+        "label": "D2"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_rojo",
+      "top": -70,
+      "left": 237,
+      "attrs": {
+        "color": "red",
+        "label": "D3"
+      }
+    },
+    {
+      "type": "wokwi-logic-analyzer",
+      "id": "logic1",
+      "top": 340,
+      "left": 380,
+      "attrs": {
+        "channelNames": "RX_D10,TX_D11,LED_VERDE_D2,LED_ROJO_D3,USB_TX_D1,D5,D6,D7",
+        "bufferSize": "2000000",
+        "filename": "captura_bt"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "uno:10",
+      "$serialMonitor:TX",
+      "",
+      []
+    ],
+    [
+      "uno:1",
+      "$serialMonitor:RX",
+      "",
+      []
+    ],
+    [
+      "uno:2",
+      "r1:2",
+      "green",
+      []
+    ],
+    [
+      "r1:1",
+      "led_verde:A",
+      "green",
+      []
+    ],
+    [
+      "led_verde:C",
+      "uno:GND.1",
+      "black",
+      []
+    ],
+    [
+      "uno:3",
+      "r2:2",
+      "red",
+      []
+    ],
+    [
+      "r2:1",
+      "led_rojo:A",
+      "red",
+      []
+    ],
+    [
+      "led_rojo:C",
+      "uno:GND.1",
+      "black",
+      []
+    ],
+    [
+      "logic1:D0",
+      "uno:10",
+      "blue",
+      []
+    ],
+    [
+      "logic1:D1",
+      "uno:11",
+      "orange",
+      []
+    ],
+    [
+      "logic1:D2",
+      "uno:2",
+      "green",
+      []
+    ],
+    [
+      "logic1:D3",
+      "uno:3",
+      "red",
+      []
+    ],
+    [
+      "logic1:D4",
+      "uno:1",
+      "violet",
+      []
+    ],
+    [
+      "logic1:GND",
+      "uno:GND.2",
+      "black",
+      []
+    ]
+  ],
+  "serialMonitor": {
+    "display": "always",
+    "newline": "crlf"
+  },
+  "dependencies": {}
+}

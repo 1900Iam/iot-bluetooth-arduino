@@ -1,0 +1,56 @@
+n,enviado,comando,valido,t_envio_ms,lat_led_ms,lat_resp_ms,dur_resp_ms,verde,rojo,esperado,cumple,respuesta
+1,V\r\n,V,True,579.253,9.691,9.705,60.26,1,0,10,True,[t=591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+2,R\r\n,R,True,979.253,10.072,10.086,59.21,0,1,01,True,[t=992 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+3,A\r\n,A,True,1379.253,9.434,9.448,61.36,1,1,11,True,[t=1391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+4,0\r\n,0,True,1779.254,9.818,9.832,61.36,0,0,00,True,[t=1792 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+5,X\r\n,X,False,2179.254,,9.185,63.46,0,0,00,True,"[t=2191 ms] ERROR: comando 'X' no valido. Use V, R, A o 0."
+6,V\r\n,V,True,2579.254,9.56,9.574,61.36,1,0,10,True,[t=2591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+7,R\r\n,R,True,2979.254,8.925,8.939,60.3,0,1,01,True,[t=2991 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+8,A\r\n,A,True,3379.254,9.306,9.32,61.35,1,1,11,True,[t=3391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+9,0\r\n,0,True,3779.254,9.692,9.706,61.36,0,0,00,True,[t=3791 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+10,X\r\n,X,False,4179.254,,10.076,63.46,0,0,00,True,"[t=4192 ms] ERROR: comando 'X' no valido. Use V, R, A o 0."
+11,V\r\n,V,True,4579.254,9.434,9.448,61.36,1,0,10,True,[t=4591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+12,R\r\n,R,True,4979.254,9.821,9.835,60.3,0,1,01,True,[t=4992 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+13,A\r\n,A,True,5379.254,9.18,9.194,61.36,1,1,11,True,[t=5391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+14,0\r\n,0,True,5779.254,9.56,9.574,61.36,0,0,00,True,[t=5791 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+15,X\r\n,X,False,6179.254,,8.929,63.46,0,0,00,True,"[t=6191 ms] ERROR: comando 'X' no valido. Use V, R, A o 0."
+16,V\r\n,V,True,6579.254,9.306,9.32,61.36,1,0,10,True,[t=6591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+17,R\r\n,R,True,6979.254,9.691,9.705,60.3,0,1,01,True,[t=6991 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+18,A\r\n,A,True,7379.254,10.076,10.09,61.36,1,1,11,True,[t=7392 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+19,0\r\n,0,True,7779.254,9.436,9.45,61.36,0,0,00,True,[t=7791 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+20,X\r\n,X,False,8179.255,,9.82,63.46,0,0,00,True,"[t=8192 ms] ERROR: comando 'X' no valido. Use V, R, A o 0."
+21,V\r\n,V,True,8579.255,9.176,9.19,61.36,1,0,10,True,[t=8591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+22,R\r\n,R,True,8979.255,9.56,9.574,60.3,0,1,01,True,[t=8991 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+23,A\r\n,A,True,9379.255,8.924,8.938,61.36,1,1,11,True,[t=9391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+24,0\r\n,0,True,9779.255,9.306,9.32,61.36,0,0,00,True,[t=9791 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+25,X\r\n,X,False,10179.255,,9.696,64.56,0,0,00,True,"[t=10191 ms] ERROR: comando 'X' no valido. Use V, R, A o 0."
+26,V\r\n,V,True,10579.255,10.072,10.086,62.45,1,0,10,True,[t=10592 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+27,R\r\n,R,True,10979.255,9.434,9.448,61.39,0,1,01,True,[t=10991 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+28,A\r\n,A,True,11379.255,9.817,9.832,62.45,1,1,11,True,[t=11392 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+29,0\r\n,0,True,11779.255,9.18,9.194,62.46,0,0,00,True,[t=11791 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+30,X\r\n,X,False,12179.255,,9.564,64.56,0,0,00,True,"[t=12191 ms] ERROR: comando 'X' no valido. Use V, R, A o 0."
+31,V\r\n,V,True,12579.255,8.918,8.932,62.45,1,0,10,True,[t=12591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+32,R\r\n,R,True,12979.255,9.302,9.316,61.39,0,1,01,True,[t=12991 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+33,A\r\n,A,True,13379.255,9.685,9.699,62.45,1,1,11,True,[t=13391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+34,0\r\n,0,True,13779.256,10.071,10.085,62.45,0,0,00,True,[t=13792 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+35,X\r\n,X,False,14179.256,,9.439,64.56,0,0,00,True,"[t=14191 ms] ERROR: comando 'X' no valido. Use V, R, A o 0."
+36,V\r\n,V,True,14579.256,9.814,9.828,62.45,1,0,10,True,[t=14592 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+37,R\r\n,R,True,14979.256,9.175,9.189,61.39,0,1,01,True,[t=14991 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+38,A\r\n,A,True,15379.256,9.558,9.572,62.45,1,1,11,True,[t=15391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+39,0\r\n,0,True,15779.256,8.918,8.932,62.46,0,0,00,True,[t=15791 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+40,X\r\n,X,False,16179.256,,9.307,64.56,0,0,00,True,"[t=16191 ms] ERROR: comando 'X' no valido. Use V, R, A o 0."
+41,V\r\n,V,True,16579.256,9.689,9.702,62.45,1,0,10,True,[t=16591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+42,R\r\n,R,True,16979.257,10.07,10.084,61.39,0,1,01,True,[t=16992 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+43,A\r\n,A,True,17379.257,9.432,9.446,62.45,1,1,11,True,[t=17391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+44,0\r\n,0,True,17779.257,9.813,9.827,62.45,0,0,00,True,[t=17792 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+45,X\r\n,X,False,18179.257,,9.179,64.56,0,0,00,True,"[t=18191 ms] ERROR: comando 'X' no valido. Use V, R, A o 0."
+46,V\r\n,V,True,18579.257,9.56,9.574,62.45,1,0,10,True,[t=18591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+47,R\r\n,R,True,18979.257,8.916,8.931,61.39,0,1,01,True,[t=18991 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+48,A\r\n,A,True,19379.257,9.3,9.314,62.45,1,1,11,True,[t=19391 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+49,0\r\n,0,True,19779.257,9.688,9.702,62.46,0,0,00,True,[t=19791 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+50,X\r\n,X,False,20179.257,,10.076,64.56,0,0,00,True,"[t=20192 ms] ERROR: comando 'X' no valido. Use V, R, A o 0."
+51,v\r\n,V,True,20579.257,9.432,9.446,62.45,1,0,10,True,[t=20591 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+52, A\r\n,A,True,20979.257,8.784,8.793,62.45,1,1,11,True,[t=20992 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+53,Z\r\n,Z,False,21379.257,,9.181,64.56,1,1,11,True,"[t=21391 ms] ERROR: comando 'Z' no valido. Use V, R, A o 0."
+54,7\r\n,7,False,21779.257,,9.566,64.56,1,1,11,True,"[t=21791 ms] ERROR: comando '7' no valido. Use V, R, A o 0."
+55,0,0,True,22179.257,8.957,8.971,62.46,0,0,00,True,[t=22189 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF

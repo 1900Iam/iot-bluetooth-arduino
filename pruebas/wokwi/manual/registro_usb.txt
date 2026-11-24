@@ -1,0 +1,12 @@
+Sistema listo. Comandos: V=verde, R=rojo, A=ambos, 0=apagar.
+LOG,t_ms,origen,comando,resultado,verde,rojo
+BT> [t=5460 ms] OK V: LED verde encendido. verde=ON rojo=OFF
+LOG,5460,BT,V,OK,1,0
+BT> [t=29767 ms] OK R: LED rojo encendido. verde=OFF rojo=ON
+LOG,29767,BT,R,OK,0,1
+BT> [t=34650 ms] OK A: ambos LED encendidos. verde=ON rojo=ON
+LOG,34650,BT,A,OK,1,1
+BT> [t=39588 ms] OK 0: ambos LED apagados. verde=OFF rojo=OFF
+LOG,39588,BT,0,OK,0,0
+BT> [t=43563 ms] ERROR: comando 'X' no valido. Use V, R, A o 0.
+LOG,43563,BT,X,INVALIDO,0,0

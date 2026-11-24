@@ -1,0 +1,6 @@
+# Configuración para ejecutar el proyecto con wokwi-cli (pruebas automatizadas).
+# El firmware se genera con: arduino-cli compile --fqbn arduino:avr:uno --output-dir build .
+[wokwi]
+version = 1
+firmware = 'build/sketch.ino.hex'
+elf = 'build/sketch.ino.elf'
