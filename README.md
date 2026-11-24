@@ -63,6 +63,23 @@ Para usarlo necesitas un token de Wokwi CI, que se crea en el panel de Wokwi. La
 
 En las pruebas se comprobó que el monitor serial de Wokwi envía correctamente por D10 pero no muestra lo que Arduino transmite por SoftwareSerial en D11. Por eso, la entrada del monitor se conecta a **D1** (puerto USB), y el programa replica allí, con el prefijo `BT> `, cada respuesta que envía por D11. La señal real de D11 queda registrada con el analizador lógico, y de ella salen las mediciones.
 
+## Resultados en Wokwi
+
+La ejecución con `wokwi-cli` envió 55 líneas a intervalos constantes de 400 ms: las cinco pruebas obligatorias repetidas 10 veces y cinco casos límite (`v`, ` A`, `Z`, `7` y `0` sin fin de línea). El escenario terminó con código 0, es decir, sin fallas en ninguna verificación del estado de los LED, y las **55 líneas cumplieron** el resultado esperado.
+
+| Comando | Repeticiones correctas | Tiempo de respuesta medio | Desviación estándar | Mínimo – máximo |
+|---|---|---|---|---|
+| V | 10/10 | 9,54 ms | 0,33 ms | 8,93 – 10,09 ms |
+| R | 10/10 | 9,51 ms | 0,42 ms | 8,93 – 10,09 ms |
+| A | 10/10 | 9,49 ms | 0,33 ms | 8,94 – 10,09 ms |
+| 0 | 10/10 | 9,56 ms | 0,34 ms | 8,93 – 10,09 ms |
+| X | 10/10 | 9,53 ms | 0,39 ms | 8,93 – 10,08 ms |
+
+El tiempo de respuesta se mide desde el fin del último byte recibido por D10 hasta el inicio de la respuesta en D11. Todos los datos están en [`pruebas/wokwi/resultados`](pruebas/wokwi/resultados): la captura VCD, los registros crudos, los CSV y las gráficas. Las evidencias de las pruebas hechas a mano en el navegador están en [`evidencias/wokwi`](evidencias/wokwi).
+
+![Entradas y salidas en Wokwi](evidencias/graficas/wokwi_entradas_salidas.png)
+![Tiempos de respuesta en Wokwi](evidencias/graficas/wokwi_latencias.png)
+
 ## Verificación independiente (simavr)
 
 Como comprobación cruzada con un segundo simulador, en [`pruebas/simavr`](pruebas/simavr) hay un banco de pruebas que ejecuta el firmware compilado en **simavr** (ATmega328P a 16 MHz). El banco transmite cada comando bit a bit por D10 a 9600 baudios, como lo haría el HC-05, decodifica las respuestas en D11 y registra los LED.
@@ -72,8 +89,7 @@ Como comprobación cruzada con un segundo simulador, en [`pruebas/simavr`](prueb
 - **Resultados:** [`resultados_por_comando.csv`](pruebas/simavr/resultados_por_comando.csv) y [`estadisticas_latencia.csv`](pruebas/simavr/estadisticas_latencia.csv). El registro serial crudo está en [`registro_serial_usb.txt`](pruebas/simavr/registro_serial_usb.txt).
 - **Para reproducirlo** (Linux): `pruebas/simavr/ejecutar.sh`.
 
-![Entradas y salidas](evidencias/graficas/fig_entradas_salidas.png)
-![Tiempos de respuesta](evidencias/graficas/fig_latencias.png)
+Las gráficas de esta verificación están en `evidencias/graficas/fig_*.png`.
 
 ### Hallazgo: SoftwareSerial es semidúplex
 
